@@ -12,11 +12,12 @@ export class Database {
     //get the db credentials from AWS secrets
     async getDBCredentials() {
         const secret_name = process.env.AWS_SECRET_DB;
-        const client = new SecretsManagerClient({
-            region: process.env.AWS_REGION,
-        });
 
         try {
+            const client = new SecretsManagerClient({
+                region: process.env.AWS_REGION,
+            });
+
             const response = await client.send(
                 new GetSecretValueCommand({
                     SecretId: secret_name,

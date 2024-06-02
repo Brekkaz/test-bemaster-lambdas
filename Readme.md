@@ -62,7 +62,7 @@ Note: Task 3 is an SQL script. This should be executed on a database instance. A
 
 2. Next, create a ZIP file containing the Lambda function code and its dependencies; exclude the test file, It's not needed on the production enviroment. 
     ```bash
-    zip -r function-name.zip . -x test.js
+    zip -r function-name.zip . -x test.mjs
     ```
 
 3. Deploy the zip file as the code origin in the AWS Lambda function on your AWS console.
