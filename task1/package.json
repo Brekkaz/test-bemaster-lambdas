@@ -1,0 +1,12 @@
+{
+  "name": "bemaster-lambdas-task1",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
